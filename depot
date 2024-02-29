@@ -1,0 +1,14 @@
+import requests
+
+url = "https://open.nhanh.vn/api/store/depot"
+
+payload = {'version': '2.0',
+'appId': '73670',
+'businessId': '41931',
+'accessToken': 'TgtXPMjeE6BtzFwgEMFJmGFRvwTDHQVgUnRIy4UvbX4YJME8QLh4LA5gz6uiS9eTtqYmQR0JHVsJDeclAffAR21ieqru6jFU9lG4BMTbtL5rlTw2rIVZHFm4aCaQdPpkIcTIce1ucMR90myfCb5NYJZmIvVP8vgwIbDspERlg1o2v6Jne04FCD6BTt5QWu6g5tdL'}
+files=[
+
+]
+headers = {}
+
+response = requests.request("POST", url, headers=headers, data=payload, files=files)
